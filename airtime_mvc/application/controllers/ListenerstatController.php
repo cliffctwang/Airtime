@@ -103,4 +103,9 @@ class ListenerstatController extends Zend_Controller_Action
         $data = Application_Model_ListenerStat::getDataPointsWithinRange($startsDT->format("Y-m-d H:i:s"), $endsDT->format("Y-m-d H:i:s"));
         $this->_helper->json->sendJson($data);
     }
+
+    public function advListenerStatsAction()
+    {
+        //
+    }
 }

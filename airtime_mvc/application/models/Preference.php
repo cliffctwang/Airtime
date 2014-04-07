@@ -1415,4 +1415,36 @@ class Application_Model_Preference
     public static function GetHistoryFileTemplate() {
     	return self::getValue("history_file_template");
     }
+ 
+    public static function SetPiwikSiteId($value) {
+    	self::setValue("idsite", $value);
+    }
+    
+    public static function GetPiwikSiteId() {
+    	return self::getValue("idsite");
+    }
+
+    public static function SetPiwikToken($value) {
+    	self::setValue("piwik_token", $value);
+    }
+    
+    public static function GetPiwikToken() {
+    	return self::getValue("piwik_token");
+    }
+
+    public static function SetPiwik($value) {
+    	self::setValue("piwik", $value);
+    }
+    
+    public static function GetPiwik() {
+    	return self::getValue("piwik");
+    }
+
+    public static function SetPiwikSiteUrl($value) {
+    	self::setValue("piwik_url", $value);
+    }
+    
+    public static function GetPiwikSiteUrl() {
+    	return self::getValue("piwik_url");
+    }
 }
